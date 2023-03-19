@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import bethackerlogo from '../assets/img/bethackerlogo.png';
+import bethackerlogo from '../assets/img/bethackerlogo.svg';
 import navicon1 from '../assets/img/navicon1.png';
 import navicon2 from '../assets/img/navicon2.png';
 
@@ -11,7 +11,7 @@ export const NavBar = () => {
 
     useEffect(() => {
         const onScroll = () => {
-            if (window.scrollY > 50) {
+            if (window.scrollY > 95) {
                 setScrolled(true);
             } else {
                 setScrolled(false);
@@ -56,3 +56,5 @@ export const NavBar = () => {
 }
 
 export default NavBar;
+
+
