@@ -7,10 +7,11 @@ const About = () => {
     <section className="about" id="home">
       <div className="row">
         <div className="col-8 about-me">
-          <h1>HELLO </h1>
+          <h1>A Little About Me </h1>
         </div>
         <div className="col-4 location">
-        <img src={NorthernVirginia} alt="Northern-VA" />
+        <h1>Located In </h1>
+        <img src={NorthernVirginia} width="500" height="500" alt="Northern-VA" />
         </div>
       </div>
     </section>
