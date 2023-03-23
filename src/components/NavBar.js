@@ -25,7 +25,7 @@ export const NavBar = () => {
   return (
     <Router>
       <Navbar expand="xl" className={`sticky-top ${scrolled ? "scrolled" : ""}`}>
-        <Navbar.Toggle aria-controls="basic-navbar-nao">
+        <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon "></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">

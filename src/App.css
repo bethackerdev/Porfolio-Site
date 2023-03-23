@@ -92,7 +92,7 @@ nav.navbar {
 
 nav.navbar.scrolled {
   padding: 0;
-  background-color: #3d3535;
+  background-color: #404348;
   height: 250px;
 }
 
@@ -232,6 +232,26 @@ span.navbar-text {
     color: #000000 !important;
   }
 
+  /* CSS for small screens */
+@media (max-width: 768px) {
+  /* Make the navbar opaque */
+  nav.navbar.scrolled {
+    background-color: grey;
+    opacity: 80%;
+    height: auto; 
+  }
+
+  /* Set the color of the menu items to white */
+  nav.navbar.scrolled .navbar-nav a.nav-link.navbar-link {
+    color: #ffffff !important;
+  }
+}
+
+@media (max-width: 768px) {
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+    color: #000000 !important;
+  }
+}
 
 /************ Banner Css ************/
 .banner {
@@ -286,59 +306,46 @@ span.navbar-text {
 .banner button:hover svg {
   margin-left: 25px;
 }
-.banner img {
-  animation: updown 3s linear infinite;
-  height: 600px;
-}
-@keyframes updown {
-    0% {
-        transform: translateY(-20px);
-    }
-    50% {
-        transform: translateY(20px);
-    }
-    100% {
-        transform: translateY(-20px);
-    }
-}
+
 .txt-rotate > .wrap {
   border-right: 0.08em solid #e1b9c3;
 }
 
-
-
-
-/************ About Css ************/
-.about  {
-  background-color: white;
+.banner .bounce {
+  animation: updown 3s linear infinite;
+  height: 600px;
 }
 
-.about .container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.about img {
-  height: 200px;
-  margin-bottom: 20px;
-}
-
-.about img:hover {
-  transform: scale(1.2);
-}
-
-@media (max-width: 992px) {
-  .about .container {
-    flex-direction: column;
+@keyframes updown {
+  0% {
+      transform: translateY(-20px);
+  }
+  50% {
+      transform: translateY(20px);
+  }
+  100% {
+      transform: translateY(-20px);
   }
 }
 
-.about .col:first-child {
-  margin-left: 0;
+/************ About Css ************/
+.about  {
+  
 }
 
-.about .col:last-child {
-  margin-right: 0;
+.about img {
+  height: 100px;
+  width: 200px;
+  margin-top: 80px;
+  margin-left: -20px;
 }
+
+.about img:hover {
+  transform: scale(1.5);
+}
+
+
+
+
+
 

@@ -7,7 +7,13 @@ import 'animate.css';
 import { TypeAnimation } from "react-type-animation";
 import NorthernVirginia from "../assets/img/NorthernVirginia.png";
 import bethackerlogo from "../assets/img/bethackerlogo.svg";
-
+import HTML from '../assets/img/HTML.png';
+import CSS from '../assets/img/CSS.png';
+import JS from '../assets/img/JS.png';
+import Bootstrap from '../assets/img/Bootstrap.png';
+import Reacti from '../assets/img/Reacti.png';
+import NodeJS from '../assets/img/NodeJS.png';
+import Express from '../assets/img/Express.png';
 
 export const Banner = () => {
     const [text, setText] = useState('');
@@ -22,7 +28,7 @@ export const Banner = () => {
                     <Col xs={12} md={6} xl={7}>
                         <TrackVisibility>
                             {({ isVisible }) =>
-                            <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                                     <span className="tagline">Welcome to my Portfolio</span>
                                     <h1>{`Hi! I'm Beth!`}</h1>
                                     <h2>
@@ -51,16 +57,24 @@ export const Banner = () => {
 
                     </Col>
                     <Col xs={12} md={6} xl={5}>
-                        <TrackVisibility>
-                            {({ isVisible }) =>
-                                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                                    <img src={headerImg} alt="Header Img" />
-                                </div>
-                            }
-                        </TrackVisibility>
+                        <div>
+                            <img src={headerImg} alt="Header Img" class="header-img bounce" />
+                        </div>
                     </Col>
                 </Row>
             </Container>
+            <section className="about" id="home">
+                <div class="row no-gutters">
+                    <div class="col"> <img src={HTML} alt="alt text" /></div>
+                    <div class="col"> <img src={CSS} alt="alt text" /></div>
+                    <div class="col"> <img src={JS} alt="alt text" /></div>
+                    <div class="col d-none d-lg-block"> <img src={Bootstrap} alt="alt text" /></div>
+                    <div class="col"> <img src={Reacti} alt="alt text" /></div>
+                    <div class="col"> <img src={NodeJS} alt="alt text" /></div>
+                    <div class="col"> <img src={Express} alt="alt text" /></div>
+                </div>
+
+            </section>
         </section>
     )
 }
