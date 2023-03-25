@@ -3,17 +3,17 @@ import NorthernVirginia from "../assets/img/NorthernVirginia.png";
 
 
 
-export const Skills = () => {
+export const Projects = () => {
     
 
 
 
     return(
 
-        <section className="skills" id="skills">
+        <section className="projects" id="projects">
 
 <div>
-    <h1>Yo</h1>
+    <h1>BLAH</h1>
 </div>
 
         </section>
@@ -24,4 +24,4 @@ export const Skills = () => {
 }
 
 
-export default Skills; 
+export default Projects; 

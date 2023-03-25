@@ -1,13 +1,23 @@
 import './App.css';
-import {NavBar} from './components/NavBar';
+import { NavBar } from './components/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Banner} from './components/Banner';
+import { Banner } from './components/Banner';
+import { Contact } from './components/Contact';
+import Projects from './Pages/Projects.js';
+import { Skills } from './Pages/Skills.js';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <Banner />
+      <Router>
+        <NavBar />
+        <Switch>
+          <Route exact path="/" component={Banner} />
+          <Route path="/skills" component={Skills} />
+          <Route path="/projects" component={Projects} />
+        </Switch>
+      </Router>
     </div>
   );
 }
