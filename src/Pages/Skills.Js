@@ -1,5 +1,5 @@
 import React from "react";
-import NorthernVirginia from "../assets/img/NorthernVirginia.png";
+import Certifications from "../components/Certifications";
 
 
 
@@ -8,20 +8,18 @@ export const Skills = () => {
 
 
 
-    return(
-
+    return (
+<div>
         <section className="skills" id="skills">
 
-<div>
-    <h1>Yo</h1>
+           </section>
+
+           <Certifications/>
+          
+
 </div>
-
-        </section>
-
-
 
     )
 }
-
 
 export default Skills; 
